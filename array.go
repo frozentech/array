@@ -34,8 +34,8 @@ func Sort(source map[string]string) (output map[string]string) {
 	return output
 }
 
-// InArray checks if the given value exists in an array
-func InArray(val interface{}, array interface{}) (exists bool, index int) {
+// Exist checks if the given value exists in an array
+func Exist(val interface{}, array interface{}) (exists bool, index int) {
 	exists = false
 	index = -1
 	switch reflect.TypeOf(array).Kind() {

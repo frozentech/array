@@ -6,33 +6,33 @@ import (
 	"github.com/frozentech/array"
 )
 
-func ExampleInArray() {
+func ExampleExist() {
 	sourceString := []string{
 		"A",
 		"B",
 	}
 
-	fmt.Println(array.InArray("A", sourceString))
-	fmt.Println(array.InArray("B", sourceString))
-	fmt.Println(array.InArray("Z", sourceString))
+	fmt.Println(array.Exist("A", sourceString))
+	fmt.Println(array.Exist("B", sourceString))
+	fmt.Println(array.Exist("Z", sourceString))
 
 	sourceInt := []int{
 		1,
 		2,
 	}
 
-	fmt.Println(array.InArray(1, sourceInt))
-	fmt.Println(array.InArray(2, sourceInt))
-	fmt.Println(array.InArray(0, sourceInt))
+	fmt.Println(array.Exist(1, sourceInt))
+	fmt.Println(array.Exist(2, sourceInt))
+	fmt.Println(array.Exist(0, sourceInt))
 
 	sourceFloat := []float64{
 		1.2,
 		2.4,
 	}
 
-	fmt.Println(array.InArray(1.2, sourceFloat))
-	fmt.Println(array.InArray(2.4, sourceFloat))
-	fmt.Println(array.InArray(2.41, sourceFloat))
+	fmt.Println(array.Exist(1.2, sourceFloat))
+	fmt.Println(array.Exist(2.4, sourceFloat))
+	fmt.Println(array.Exist(2.41, sourceFloat))
 
 	// Output:
 	// true 0
